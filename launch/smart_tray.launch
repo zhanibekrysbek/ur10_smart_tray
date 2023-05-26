@@ -1,0 +1,60 @@
+<launch>
+
+	<node name="ur10_smart_tray" pkg="ur10_smart_tray" type="smart_tray_main.py" output="screen"/>
+
+	<node name="rft_sensor_serial" pkg="rft_sensor_serial" type="rft_sensor_serial" output="screen" />
+
+	<node name="rft_sensor_serial_2" pkg="rft_sensor_serial" type="rft_sensor_serial_2"  output="screen"/>
+
+
+
+	<node name="camera_1" pkg="camera_nodes" type="camera_1.py" output='screen'/>
+
+	<node name="camera_1_pose_estimation" pkg="camera_nodes" type="camera_1_pose_estimation.py" output='screen'/>
+
+	<node name="camera_1_pose_estimation_single_marker" pkg="camera_nodes" type="camera_1_pose_estimation_single_marker.py" output='screen'/>
+
+	<!-- <node name="tray2grf_1" pkg="camera_nodes" type="tray2grf_1.py" output='screen'/> -->
+
+	<!-- <node name="camera_1_grf_estimation" pkg="camera_nodes" type="camera_1_grf_estimation.py" output='screen'/> -->
+
+
+	
+	<node name="camera_2" pkg="camera_nodes" type="camera_2.py" output='screen'/>
+
+	<node name="camera_2_pose_estimation" pkg="camera_nodes" type="camera_2_pose_estimation.py" output='screen'/>
+
+	<node name="camera_2_pose_estimation_single_marker" pkg="camera_nodes" type="camera_2_pose_estimation_single_marker.py" output='screen'/>
+
+
+	<!-- <node name="tray2grf_2" pkg="camera_nodes" type="tray2grf_2.py" output='screen'/> -->
+
+	<!-- <node name="camera_2_grf_estimation" pkg="camera_nodes" type="camera_2_grf_estimation.py" output='screen'/> -->
+
+
+
+	<!-- <node name="camera_3" pkg="camera_nodes" type="camera_3.py" output='screen'/>
+
+	<node name="camera_3_pose_estimation" pkg="camera_nodes" type="camera_3_pose_estimation.py" output='screen'/>
+
+	<node name="tray2grf_3" pkg="camera_nodes" type="tray2grf_3.py" output='screen'/>
+
+	<node name="camera_3_grf_estimation" pkg="camera_nodes" type="camera_3_grf_estimation.py" output='screen'/> -->
+
+
+	<node name="camera_4" pkg="camera_nodes" type="camera_4.py" output='screen'/>
+
+	<node name="camera_4_pose_estimation" pkg="camera_nodes" type="camera_4_pose_estimation.py" output='screen'/>
+
+	<node name="camera_4_pose_estimation_single_marker" pkg="camera_nodes" type="camera_4_pose_estimation_single_marker.py" output='screen'/>
+
+	<!-- <node name="tray2grf_4" pkg="camera_nodes" type="tray2grf_4.py" output='screen'/> -->
+
+	<!-- <node name="camera_4_grf_estimation" pkg="camera_nodes" type="camera_4_grf_estimation.py" output='screen'/> -->
+
+
+
+	<node name="sound_play" pkg="sound_play" type="soundplay_node.py" output='screen'/>
+
+
+</launch>
